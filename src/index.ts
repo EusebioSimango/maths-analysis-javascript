@@ -1,3 +1,16 @@
+const isPGorPAorNone = () => {
+	let kind
+
+	if (isPA)
+		kind = "Progressao Artmetica"
+	if (isPG)
+                kind = "Progressao Geometrica"
+	if (isNone)
+                kind = "nem Progressao Artmetica, nem Progressao Geometrica"
+	return kind
+
+}
+
 export const calculateFiveFirstTerms = (sucessao: string) => {
 	console.log("Bn = " + sucessao.replaceAll("1n", "n"))
 	for (let i = 1; i <= 5; i++) {
