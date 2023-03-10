@@ -10,6 +10,7 @@ const getSequenceFromTerms = (terms) => {
 	}).filter(x => x)
 
 	const getTheRatio = (possibleRatio) => {
+		console.log(possibleRatio)
 		const ratio = possibleRatio.map((x, i) => {
 			if (!possibleRatio[i+1])
 				return
@@ -43,4 +44,5 @@ const getSequenceFromTerms = (terms) => {
 }
 
 getSequenceFromTerms("6 9 12 15 18")
+getSequenceFromTerms("-1 5 -9 13 -17 21 -25")
 getSequenceFromTerms("3 6 12 24 48 96")
